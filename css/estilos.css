@@ -1,6 +1,7 @@
 :root{
     --primary: #52ADA2;
     --secondary: #ADDCCA;
+    --background-color-rgb: 0, 0, 0;
 }
 
 *{
@@ -40,15 +41,14 @@ color: #202020;
     background: var(--primary);
 }
 
-.regs{
-    max-width: 25%;
-}
-
 .btn-primary{
     background: var(--primary);
     border: none;
 }
 
-footer{
+#hero{
+    background-image: url('/img/hero.jpg');
     width: 100%;
+    min-height: 80vh;
+    background-size: cover;
 }
