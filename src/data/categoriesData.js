@@ -9,7 +9,7 @@ export const categoriesData = [
     title: "Sudeste Asiático Express",
     description: "Templos, comida callejera y la biodiversidad más deslumbrante.",
     fullDescription: "Sumérgete en la riqueza cultural del Sudeste Asiático: desde los templos dorados de Tailandia hasta las selvas y playas de Bali.",
-    image: "/src/assets/img/category/asia.webp",
+    image: images["../assets/img/category/asia.webp"],
     features: ["Gastronomía exótica", "Templos budistas", "Mercados nocturnos", "Naturaleza frondosa"]
   },
   {
@@ -17,7 +17,7 @@ export const categoriesData = [
     title: "Cumbres de los Andes",
     description: "Trekking de alta intensidad, lagunas turquesa y cultura viva.",
     fullDescription: "Despierta sobre las nubes recorriendo la gran cordillera sudamericana. Senderismo de alta montaña y pueblos llenos de tradición.",
-    image: "/src/assets/img/category/cumbres-andes.webp",
+    image: images["../assets/img/category/cumbres-andes.webp"],
     features: ["Senderismo y trekking", "Montañas majestuosas", "Cultura andina", "Aire puro"]
   },
   {
@@ -25,7 +25,7 @@ export const categoriesData = [
     title: "Europa Low-Cost",
     description: "Trenes nocturnos, hostales con historia y capitales vibrantes.",
     fullDescription: "Recorre las capitales europeas optimizando tu presupuesto. Museos icónicos, vida nocturna y rutas ferroviarias escénicas.",
-    image: "/src/assets/img/category/europa-low-cost.webp",
+    image: images["../assets/img/category/europa-low-cost.webp"],
     features: ["Pases de tren", "Hostales con encanto", "Tours a pie", "Vida nocturna"]
   },
 
