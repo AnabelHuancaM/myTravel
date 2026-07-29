@@ -1,11 +1,11 @@
 
 function Navbar() {
   return (
-     <nav className="navbar navbar-expand-lg fixed-top bg-light">
+     <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-            <a className="navbar-brand logo-text" href="#">
+            <a className="navbar-brand content-logo" href="/">
                 <img src="./Logo.svg" className='me-3' alt="myTravel" width="50" height="50"/>
-                MyTravel
+                <h5 className="logo-text">MyTravel</h5>
             </a>
 
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

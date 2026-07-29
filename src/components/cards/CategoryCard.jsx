@@ -1,34 +1,35 @@
+import { useNavigate } from "react-router-dom";
 
-function CategoryCard (props) {
-    const { title, description } = props;
+function CategoryCard({ id, title, description, image }) {
+  const navigate = useNavigate();
 
-    const categories = [
-        {    
-            title: "Sudeste Asiático Express",
-            description: "Templos, comida callejera y el caos más hermoso del mundo.",
-            image: "sudeste-asiatico.webp"
-        },
-        {    
-            title: "Cumbres de los Andes",
-            description: "Despierta sobre las nubes. Trekking de alta intensidad y cultura viva.",
-            image: "cumbres-andes.webp"
-        },
-        {    
-            title: "Europa Low-Cost",
-            description: "Trenes nocturnos, hostales con historia y las capitales más vibrantes.",
-            image: "europa-low-cost.webp"
-        },
-    ];
+  const handleClick = () => {
+    if (id) {
+      navigate(`/categoria/${id}`);
+    }
+  };
 
   return (
-    <div className="card card_category">
-        <img src="src/assets/img/category/asia.webp" className="card-img" alt="..." />
-        <div className="card-img-overlay">
-        <h5 className="">{title}</h5>
-        <p className="">{description}</p>
-        </div>
+    <div 
+      className="card card_category cursor-pointer h-100" 
+      onClick={handleClick}
+      style={{ cursor: "pointer" }}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === "Enter") handleClick(); }}
+    >
+      <img 
+        src={image || "/src/assets/img/category/asia.webp"} 
+        className="card-img" 
+        alt={`Categoría ${title}`} 
+        style={{ objectFit: "cover", height: "240px", width: "100%" }}
+      />
+      <div className="card-img-overlay d-flex flex-column justify-content-end">
+        <h5 className="mb-1 text-white">{title}</h5>
+        <p className="card-text small mb-0">{description}</p>
+      </div>
     </div>
-    ); 
+  );
 }
 
 export default CategoryCard;
