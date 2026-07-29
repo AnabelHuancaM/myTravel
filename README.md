@@ -14,6 +14,3 @@ Elaborado con las siguientes tecnologías:
 
 ![alt text](https://anabelhumor.vercel.app/projects/myTravel.webp)
 
-###
-## Site
-Here is a working live demo of website : (https://mytravel-web.netlify.app/)

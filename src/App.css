@@ -197,7 +197,7 @@ p{
 
 .hero-img{
   /* background-image: url(assets/img/hero.webp); */
-  background: linear-gradient(90deg, #FDFDFD 0%, #ffffff15 100%), url(assets/img/hero.webp);
+  background: linear-gradient(90deg, #FDFDFD 0%, #ffffff15 100%), url(/hero.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

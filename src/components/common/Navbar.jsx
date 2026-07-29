@@ -1,7 +1,7 @@
 
 function Navbar() {
   return (
-     <nav className="navbar navbar-expand-lg fixed-top">
+     <nav className="navbar navbar-expand-lg fixed-top bg-light">
         <div className="container">
             <a className="navbar-brand content-logo" href="/">
                 <img src="./Logo.svg" className='me-3' alt="myTravel" width="50" height="50"/>

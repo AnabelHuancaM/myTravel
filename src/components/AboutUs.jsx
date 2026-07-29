@@ -19,7 +19,7 @@ function AboutUs () {
             </div>
 
             <div className='col-lg-6'>
-              <img src="/hero.webp" alt="Destino" className='img-fluid rounded-3'/>
+              <img src="/nosotros.webp" alt="Destino" className='img-fluid rounded-3'/>
             </div>
 
           </div>
