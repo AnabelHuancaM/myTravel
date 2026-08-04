@@ -333,13 +333,14 @@ p{
   text-align: center;
   align-content: center;
   margin-bottom: 5px;
+  border-radius: 8px;
 }
 
   .card-feature:hover{
     box-shadow: var(--shadow);
   }
   .card-feature h4{
-    color: var(--dark);
+    color: var(--secondary-text);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
   }  

@@ -27,7 +27,7 @@ function CategoryDetailPage() {
         className="position-relative d-flex align-items-center justify-content-center text-white text-center"
         style={{
           height: "300px",
-          background: `linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 100%), url(${category.image})`,
+          background: `linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 100%), url(${category.banner})`,
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
@@ -60,7 +60,7 @@ function CategoryDetailPage() {
             </div>
 
             <div className="col-lg-4">
-              <img src={category.image} alt={category.title} className="img-fluid rounded shadow" />
+              <img src={category.card} alt={category.title} className="img-fluid rounded shadow" />
             </div>
           </div>
         </section>

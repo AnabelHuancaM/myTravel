@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-function CategoryCard({ id, title, description, image }) {
+function CategoryCard({ id, title, description, card, image, img }) {
   const navigate = useNavigate();
+  const imgSrc = card;
 
   const handleClick = () => {
     if (id) {
@@ -19,7 +20,7 @@ function CategoryCard({ id, title, description, image }) {
       onKeyDown={(e) => { if (e.key === "Enter") handleClick(); }}
     >
       <img 
-        src={image || "/src/assets/img/category/asia.webp"} 
+        src={imgSrc} 
         className="card-img" 
         alt={`Categoría ${title}`} 
         style={{ objectFit: "cover", height: "240px", width: "100%" }}

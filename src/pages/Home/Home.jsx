@@ -60,7 +60,7 @@ function Home() {
                   id={category.id}
                   title={category.title} 
                   description={category.description}
-                  image={category.image}
+                  card={category.card}
                 />
               </div>
             ))}
