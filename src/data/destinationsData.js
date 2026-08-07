@@ -159,6 +159,126 @@ export const destinationsData = [
     duration: "3 días / 2 noches",
     rating: 4.8,
     highlights: ["Pirámide de Kukulkán", "Cenote Sagrado e Ik Kil", "Gran Juego de Pelota", "El Caracol (Observatorio Maya)"]
+  },
+  // --- Destinos de Sudeste Asiático Express ---
+  {
+    id: "bangkok",
+    title: "Bangkok",
+    location: "Bangkok, Tailandia",
+    description: "Mercados flotantes, templos dorados y vida nocturna deslumbrante.",
+    fullDescription: "Recorre los contrastes de Bangkok: desde el imponente Gran Palacio Real y el Wat Arun hasta los bulliciosos mercados de calle y modernas avenidas.",
+    price: 240,
+    img: images["../assets/img/category/asia/naturaleza/01.jpg"],
+    categoryId: "asia",
+    duration: "4 días / 3 noches",
+    rating: 4.8,
+    highlights: ["Gran Palacio Real", "Wat Pho y Buda Reclinado", "Paseo en barco por el río Chao Phraya", "Street food en Chinatown"]
+  },
+  {
+    id: "phuket",
+    title: "Phuket",
+    location: "Phuket, Tailandia",
+    description: "Playas paradisíacas, islas kársticas y aguas cristalinas en el Mar de Andamán.",
+    fullDescription: "Phuket ofrece una combinación única de relajación costera, excursiones a las famosas islas Phi Phi y santuarios de elefantes.",
+    price: 290,
+    img: images["../assets/img/category/asia/naturaleza/02.jpg"],
+    categoryId: "asia",
+    duration: "5 días / 4 noches",
+    rating: 4.9,
+    highlights: ["Tour a Islas Phi Phi y Maya Bay", "Gran Buda de Phuket", "Santuario de elefantes", "Atardecer en Promthep Cape"]
+  },
+  {
+    id: "chiang-mai",
+    title: "Chiang Mai",
+    location: "Chiang Mai, Tailandia",
+    description: "Capital cultural rodeada de montañas sagradas, templos y artesanía ancestral.",
+    fullDescription: "Sumérgete en la tranquilidad del norte de Tailandia. Explora templos antiguos en la selva, mercados nocturnos y la rica tradición artesanal Lanna.",
+    price: 210,
+    img: images["../assets/img/category/asia/naturaleza/03.jpg"],
+    categoryId: "asia",
+    duration: "4 días / 3 noches",
+    rating: 4.7,
+    highlights: ["Templo Wat Phra That Doi Suthep", "Night Bazaar de Chiang Mai", "Clases de cocina tailandesa", "Trekking en Parque Nacional Doi Inthanon"]
+  },
+  // --- Destinos de Cumbres de los Andes ---
+  {
+    id: "huaraz-laguna-69",
+    title: "Laguna 69 & Huaraz",
+    location: "Ancash, Perú",
+    description: "Aguas turquesas e imponentes glaciares en el corazón de la Cordillera Blanca.",
+    fullDescription: "Uno de los trekkings más espectaculares de los Andes peruanos. Disfruta de paisajes de alta montaña y la majestuosidad de la Cordillera Blanca.",
+    price: 190,
+    img: images["../assets/img/category/andes/naturaleza/01.jpg"],
+    categoryId: "andes",
+    duration: "4 días / 3 noches",
+    rating: 4.9,
+    highlights: ["Trekking a Laguna 69", "Parque Nacional Huascarán", "Nevado Pastoruri", "Laguna Llanganuco"]
+  },
+  {
+    id: "torres-del-paine",
+    title: "Torres del Paine",
+    location: "Magallanes, Chile",
+    description: "Picos de granito, glaciares milenarios y estepas patagónicas de ensueño.",
+    fullDescription: "Vive la aventura definitiva en la Patagonia chilena recorriendo macizos rocosos, glaciares navegables y el emblemático circuito de trekking.",
+    price: 450,
+    img: images["../assets/img/category/andes/naturaleza/02.jpg"],
+    categoryId: "andes",
+    duration: "6 días / 5 noches",
+    rating: 5.0,
+    highlights: ["Base Torres del Paine", "Glaciar Grey", "Valle del Francés", "Navegación por el Lago Pehoé"]
+  },
+  {
+    id: "salar-de-uyuni",
+    title: "Salar de Uyuni",
+    location: "Potosí, Bolivia",
+    description: "El desierto de sal más grande del mundo y su legendario efecto espejo.",
+    fullDescription: "Un viaje surrealista a través del vasto salar andino, rodeado de desiertos de colores, géiseres, lagunas de flamencos y cielos estrellados inigualables.",
+    price: 310,
+    img: images["../assets/img/category/andes/naturaleza/03.jpg"],
+    categoryId: "andes",
+    duration: "4 días / 3 noches",
+    rating: 4.8,
+    highlights: ["Efecto espejo en temporada de lluvia", "Isla Incahuasi y cactus gigantes", "Laguna Colorada y flamencos", "Hotel de Sal"]
+  },
+  // --- Destinos de Europa Low-Cost ---
+  {
+    id: "praga",
+    title: "Praga",
+    location: "Praga, República Checa",
+    description: "La Ciudad de las Cien Torres con arquitectura medieval y precios accesibles.",
+    fullDescription: "Descubre una de las ciudades más románticas y económicas de Europa. Pasea por el Puente de Carlos, el Reloj Astronómico y el histórico Castillo de Praga.",
+    price: 180,
+    img: images["../assets/img/category/europa/ciudades/01.jpg"],
+    categoryId: "europa-low-cost",
+    duration: "4 días / 3 noches",
+    rating: 4.8,
+    highlights: ["Puente de Carlos", "Castillo de Praga y Catedral de San Vito", "Reloj Astronómico", "Cervecerías artesanales históricas"]
+  },
+  {
+    id: "budapest",
+    title: "Budapest",
+    location: "Budapest, Hungría",
+    description: "La perla del Danubio, famosa por sus baños termales y Ruin Bars.",
+    fullDescription: "Combina relajación y ambiente nocturno único en Budapest. Disfruta de baños termales centenarios, cruceros nocturnos por el Danubio y sus célebres bares en ruinas.",
+    price: 195,
+    img: images["../assets/img/category/europa/ciudades/02.jpg"],
+    categoryId: "europa-low-cost",
+    duration: "4 días / 3 noches",
+    rating: 4.9,
+    highlights: ["Parlamento de Budapest", "Baños termales Széchenyi", "Bastión de los Pescadores", "Ruin Bars en el Barrio Judío"]
+  },
+  {
+    id: "cracovia",
+    title: "Cracovia",
+    location: "Cracovia, Polonia",
+    description: "Centro histórico medieval impecable y una gastronomía rica y económica.",
+    fullDescription: "Una joya europea llena de historia, cultura y excelente ambiente. Visita la Gran Plaza del Mercado, el Castillo de Wawel y el legendario barrio Kazimierz.",
+    price: 165,
+    img: images["../assets/img/category/europa/ciudades/03.jpg"],
+    categoryId: "europa-low-cost",
+    duration: "3 días / 2 noches",
+    rating: 4.7,
+    highlights: ["Plaza del Mercado Rynek Główny", "Castillo Real de Wawel", "Barrio Judío Kazimierz", "Minas de Sal de Wieliczka"]
   }
 ];
 

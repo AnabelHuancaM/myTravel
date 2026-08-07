@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { getCategoryById } from "../../data/categoriesData";
 import { getDestinationsByCategory } from "../../data/destinationsData";
 import PlaceCard from "../../components/cards/PlaceCard";
+import Banner from "../../components/common/Banner";
 
 function CategoryDetailPage() {
   const { id } = useParams();
@@ -20,26 +21,21 @@ function CategoryDetailPage() {
   }
 
   const categoryDestinations = getDestinationsByCategory(id);
+  const galleryImages = category.gallery || [];
 
   return (
     <div className="category-detail-page pb-5">
-      <div 
-        className="position-relative d-flex align-items-center justify-content-center text-white text-center"
-        style={{
-          height: "300px",
-          background: `linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 100%), url(${category.banner})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
+      <Banner
+        bgImage={category.banner}
+        overlayGradient="linear-gradient(180deg, #FDFDFD 0%, #ffffff15 100%)"
+        className=""
       >
-        <div className="container">
-          <span className="badge bg-success mb-2 px-3 py-2 text-uppercase fs-6">Categoría</span>
-          <h1 className="display-4 fw-bold mb-2">{category.title}</h1>
-          <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
-            {category.description}
-          </p>
-        </div>
-      </div>
+        <span className="badge bg-success mb-2 px-3 py-2 text-uppercase fs-6">Categoría</span>
+        <h1 className="display-4 fw-bold mb-2">{category.title}</h1>
+        <p className="lead" style={{ maxWidth: "700px" }}>
+          {category.description}
+        </p>
+      </Banner>
 
       <div className="container my-5">
         <section className='section'>
@@ -98,7 +94,20 @@ function CategoryDetailPage() {
         </section>
 
         <section className='section'>
-          <h3 className="section-title fs-4 mb-4">Galería</h3>
+          <h3 className="section-title fs-4">Galería</h3>
+          <div className="row g-4">
+            {galleryImages.map((imgUrl, idx) => (
+              <div key={idx} className="col-md-4">
+                <div className="overflow-hidden rounded-3 shadow-sm" style={{ height: "450px" }}>
+                  <img 
+                    src={imgUrl} 
+                    alt={`Galería ${category.title} ${idx + 1}`}
+                    className="img-galery"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         <div className="mt-5 text-center">

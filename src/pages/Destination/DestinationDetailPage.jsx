@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { getDestinationById } from "../../data/destinationsData";
 import { getCategoryById } from "../../data/categoriesData";
+import Banner from "../../components/common/Banner";
 
 function DestinationDetailPage() {
   const { id } = useParams();
@@ -23,31 +24,26 @@ function DestinationDetailPage() {
   return (
     <div className="destination-detail-page pb-5">
       {/* Banner / Cabecera */}
-      <div 
-        className="position-relative d-flex align-items-end text-white p-4 p-md-5"
-        style={{
-          height: "380px",
-          background: `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%), url(${destination.img})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
+      <Banner
+        bgImage={destination.img}
+        height="380px"
+        overlayGradient="linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%)"
+        className="align-items-end p-4 p-md-5 text-start"
       >
-        <div className="container">
-          {category && (
-            <Link 
-              to={`/categoria/${category.id}`} 
-              className="badge bg-success text-decoration-none mb-2 px-3 py-2 text-uppercase"
-            >
-              {category.title}
-            </Link>
-          )}
-          <h1 className="display-4 fw-bold mb-2">{destination.title}</h1>
-          <p className="fs-5 mb-0 text-white-50">
-            <i className="bi bi-geo-alt-fill text-danger me-2"></i>
-            {destination.location}
-          </p>
-        </div>
-      </div>
+        {category && (
+          <Link 
+            to={`/categoria/${category.id}`} 
+            className="badge bg-success text-decoration-none mb-2 px-3 py-2 text-uppercase"
+          >
+            {category.title}
+          </Link>
+        )}
+        <h1 className="display-4 fw-bold mb-2">{destination.title}</h1>
+        <p className="fs-5 mb-0 text-white-50">
+          <i className="bi bi-geo-alt-fill text-danger me-2"></i>
+          {destination.location}
+        </p>
+      </Banner>
 
       <div className="container my-5">
         <div className="row g-4">

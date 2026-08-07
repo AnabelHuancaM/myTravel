@@ -22,7 +22,7 @@ function Navbar() {
     >
       <div className="container">
         <a className="navbar-brand content-logo" href="/">
-          <img src="/logo.svg" className='me-3' alt="myTravel" width="50" height="50"/>
+          <img src="./logo.svg" className='me-3' alt="myTravel" width="50" height="50"/>
           <h5 className="logo-text">MyTravel</h5>
         </a>
 
@@ -33,16 +33,16 @@ function Navbar() {
         <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul className="nav justify-content-end">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a className="nav-link active" aria-current="page" href="/">Inicio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Categorías</a>
+              <a className="nav-link" href="/categorias">Categorías</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Destinos</a>
+              <a className="nav-link" href="/destinos">Destinos</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contacto</a>
+              <a className="nav-link" href="/contacto">Contacto</a>
             </li>
           </ul>
         </div>

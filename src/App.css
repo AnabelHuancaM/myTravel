@@ -115,7 +115,7 @@ p{
 .nav-link{
   font-family: Inter;
   font-weight: 500;
-  font-size: 18px !important; 
+  font-size: 15px !important; 
   color: var(--dark) !important;
   padding: 0.8rem !important;
 }
@@ -195,8 +195,7 @@ p{
   }
 
 
-.hero-img{
-  /* background-image: url(assets/img/hero.webp); */
+.hero-img {
   background: linear-gradient(90deg, #FDFDFD 0%, #ffffff15 100%), url(/hero.webp);
   background-position: center;
   background-size: cover;
@@ -358,4 +357,15 @@ p{
 /*ICONO DESTINO*/  
 .destino-map {
   color: var(--secondary2);
+}
+
+.img-galery{
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+  transition: transform 0.3s ease;
+}
+
+.img-galery:hover{
+  transform: scale(1.05);
 }
